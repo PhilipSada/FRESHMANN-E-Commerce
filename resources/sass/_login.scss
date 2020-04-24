@@ -1,0 +1,98 @@
+.login-container, .register-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:5rem;
+
+   
+}
+
+.form-container{
+    margin:1rem 30rem;
+
+    h3{
+        text-transform: uppercase;
+        text-align: center;
+        font-size:1.5rem;
+    }
+    
+    .form-group{
+        p{
+            float:right;
+            color:rgba(255, 0, 0, 0.897);
+            font-size:0.8rem;
+        }
+        label{
+            font-weight:bold;
+            font-size:0.9rem;
+        }
+    }
+    .login-error{
+        color:rgba(255, 0, 0, 0.897);
+        font-size:0.8rem;
+    }
+}
+.link-account{
+    
+    text-decoration:none !important;
+    color:rgba(0, 0, 0, 0.836);
+    font-weight:bold;
+    
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  
+     .form-container{
+         margin-left:3rem;
+         margin-right:3rem;
+     }   
+    
+  
+}
+  
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    .form-container{
+        margin-left:8rem;
+        margin-right:8rem;
+    }  
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1099px) {
+    .form-container{
+        margin-left:18rem;
+        margin-right:18rem;
+    }  
+}
+@media (min-width: 1100px) and (max-width: 1119px) {
+    .form-container{
+        margin-left:20rem;
+        margin-right:20rem;
+    }  
+}
+@media (min-width: 1120px) and (max-width: 1199px) {
+    .form-container{
+        margin-left:20rem;
+        margin-right:20rem;
+    }  
+}
+  
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .form-container{
+        margin-left:22rem;
+        margin-right:22rem;
+    }  
+ }
+@media (min-width: 1400px) and (max-width: 1500px) {
+    .form-container{
+        margin-left:25rem;
+        margin-right:25rem;
+    } 
+}
+// @media (min-width: 1400px) {
+//     .form-container{
+//         margin-left:14rem;
+//         margin-right:14rem;
+//     } 
+// }

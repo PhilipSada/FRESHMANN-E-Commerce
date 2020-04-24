@@ -1,0 +1,35 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700,900&display=swap');
+
+// Variables
+// @import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+@import 'cart';
+@import 'featured';
+@import 'global';
+@import 'home';
+@import 'login';
+@import 'navigation';
+@import 'products';
+@import 'promo';
+@import 'singlePage';
+@import 'sideCart';
+@import 'footer';
+@import 'checkout';
+@import 'orders';
+@import 'email';
+@import 'homeNavigation';
+@import 'collection';
+@import 'productFilter';
+@import 'similarProducts';
+@import 'thank-you';
+@import 'admin';

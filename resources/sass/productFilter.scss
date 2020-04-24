@@ -1,0 +1,87 @@
+// .product-side-filter-container{
+//     border-right:1px solid rgba(0, 0, 0, 0.158);
+//     position: absolute;;
+//     // background-color:grey;
+//     top:0;
+//     height:100%;
+//     width:100%;
+
+   
+    
+// }
+// .make-me-sticky {
+//     position: sticky;
+//     position:-webkit-sticky;
+//     top: 0; 
+//     padding: 0 15px;
+//   }
+// .side-filter{
+//     // background-color:pink;
+//     position: relative;
+   
+// }
+.top-filter{
+  font-size:0.8rem;
+
+  select{
+      font-size:0.8rem;
+  }
+}
+
+.product-view, .outfit-view{
+    border:1px solid black;
+    padding:0.3rem 2rem;
+    text-align:center;
+    cursor:pointer;
+}
+.product-view-active, .outfit-view-active{
+    border:1px solid black;
+    padding:0.3rem 2rem;
+    text-align:center;
+    cursor:pointer;
+    background-color: rgba(0, 0, 0, 0.897);
+    color:white;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+        
+    .outfit-view-active{
+        margin-bottom:1rem;
+        margin-top:1rem;
+    }
+    .outfit-view{
+        margin-bottom:1rem;
+        margin-top:1rem;
+    }
+  
+}
+  
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    .product-view-active, .outfit-view-active{
+        padding:0.3rem 2rem;
+        
+    }
+    .product-view-active{
+        padding-left:1rem;
+        padding-right:2rem;
+    }
+    .product-view{
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+    .outfit-view{
+        padding:0.3rem 2rem;
+    }
+    .filter-price{
+      width:7rem;
+    }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+   
+  
+}
+  
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }

@@ -1,0 +1,63 @@
+footer{
+    margin-top:10rem;
+    margin-bottom:0rem;
+    height:42vh;
+    background-color:rgba(211, 211, 211, 0.473);
+   
+
+    p{
+        font-size:0.8rem;
+        cursor:pointer;
+    }
+}
+.footer{
+   
+    // background-color:rgba(211, 211, 211, 0.219);
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding-top:4rem;
+}
+.footer-heading{
+    font-weight:bold;
+}
+.last-footer{
+    // -moz-box-shadow: 2px 2px 2px rgba(211, 211, 211, 0.219);
+	// -webkit-box-shadow: 2px 2px 2px rgba(211, 211, 211, 0.219);
+    // box-shadow: 2px 2px 2px rgba(211, 211, 211, 0.219);
+    margin-top:1rem;
+ 
+    text-align:center;
+}
+
+// .payment-footer{
+//     display:flex;
+//     justify-content: space-around;
+//     align-items:center;
+//     padding-top:4rem;
+
+//     .card-payment-options{
+//         display:flex;
+//         justify-content: space-around;
+//         align-items:center;
+//     }
+//     .visa-image-container,.mastercard-image-container{
+//         border-radius:50%;
+//         height:70px;
+//         width:70px;
+//     }
+//     .visa-image, .mastercard-image{
+//         object-fit:contain;
+//         width:100%;
+//         height:100%;
+//     }
+//     .other-footer-options{
+//         display:flex;
+//         justify-content:space-around;
+//         align-items:center;
+//     }
+//     p{
+//         font-size:0.8rem;
+//         cursor:pointer;
+//     }
+// }

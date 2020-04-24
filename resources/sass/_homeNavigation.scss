@@ -1,0 +1,91 @@
+
+.homeNavBar{
+    position:absolute;
+    top:0;
+    left:0;
+    height:7vh;
+    z-index:4;
+    width:100%;
+    // padding:0 30px;
+    // font-size:20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    // background:white;
+    // color:white;
+    // -moz-box-shadow: 0.5px 0.5px 0.5px rgba(128, 128, 128, 0.486);
+	// -webkit-box-shadow: 0.5px 0.5px 0.5px rgba(128, 128, 128, 0.486);
+    // box-shadow: 0.5px 0.5px 0.5px rgba(128, 128, 128, 0.486);
+
+    .homeNavMenu{
+        font-size:.8rem;
+        color:black;
+        cursor:pointer;
+        .homeIoMenu{
+            font-size:25px;
+        }
+    }
+
+    .homeNavCart{
+        text-decoration: none;
+        cursor:pointer;
+        color:white;
+        .homeAiCart{
+            font-size:25px;
+        }
+        .cart-no{
+            border-radius:50%;
+            padding-left:3px;
+            padding-right:3px;
+            color:white;
+            position:absolute;
+            right:20%;
+            top:0;
+            background-color: orangered;
+            font-size:0.7rem;
+        }
+
+    }
+
+}
+.homeNavBar > div{
+    padding:0 30px;
+}
+.homeNavIcons{
+    display:flex;
+    position:relative;
+    // justify-content:space-evenly;
+}
+.homeNavLogo{
+    a{
+        color:black;
+        text-decoration:none;
+        letter-spacing:4px;
+        font-weight: 600;
+        // text-shadow: 1px 1px 0px black; 
+        background-color: rgba(255, 255, 255, 0.021);
+        // border:1px solid white;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .homeNavCart{
+       color:black !important;
+    }
+       
+        
+    
+  
+}
+  
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+  
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }

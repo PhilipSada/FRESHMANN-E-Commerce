@@ -1,0 +1,138 @@
+// .slider-section{
+//     margin-top:2rem;
+//     margin-left:2rem;
+//     margin-right:2rem;
+// }
+
+
+
+
+.content{
+    position:relative;
+    width:100%;
+    height:100vh;
+    // margin-top:0.5rem;
+    // margin-left:1rem;
+    // margin-right:2rem;
+   
+}
+.hero{
+    background:url('/images/fresh8.png');
+    background-size:cover;
+    background-position:top;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100vh;
+}
+
+.overlay{
+    position:absolute;
+    height:100vh;
+    width:37%;
+    z-index:2;
+    top:0;
+    right:0;
+    background-color:rgba(0, 0, 0, 0.904);
+    // background-color: rgba(255, 0, 0, 0.384);
+}
+.hero-text{
+    position:absolute;
+    // height:100vh;
+    width:28%;
+    z-index:4;
+    top:35%;
+    right:4.3%;
+    text-transform:uppercase;
+    text-align:center;
+    // font-family: 'Merriweather', serif;
+ 
+    font-weight:700;
+    p{
+        color:white;
+    }
+    h2{
+        color:white;
+        font-size:3rem;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+        border:1px solid white;
+        padding:0.5rem 1rem;
+        transition:all .3s ease-in-out;
+    }
+}
+.hero-side-text{
+    position: absolute;
+    top:20%;
+    left:10%;
+    display:none;
+}
+.hero-shop-now{
+    &:hover{
+        background-color:orangered;
+        color:white;
+        border:2px solid orangered;
+    }
+}
+.social-icons{
+    position:absolute;
+    bottom:10%;
+    left:3%;
+}
+.social-icons-ti{
+    font-size:25px;
+    color:black;
+}
+.social-icons::after{
+    content:'';
+    width:1px;
+    height:90px;
+    background:black;
+    position:absolute;
+    left:10px;
+    bottom:100px;
+}
+
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .overlay{
+       display:none;
+    }
+    .hero-text{
+        display: none;
+    }
+       
+        
+    
+  
+}
+  
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    .overlay{
+        width:35%;
+     }
+     .hero-text{
+         width:27%;
+         h2{
+            font-size:2.3rem;
+        }
+     }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+    .overlay{
+        width:40%;
+    }
+     .hero-text{
+         width:30%;
+         h2{
+            font-size:2.5rem;
+        }
+    }
+  
+}
+  
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
