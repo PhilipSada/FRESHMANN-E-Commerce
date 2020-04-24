@@ -22,9 +22,9 @@ const Footer = ()=>(
                     <p>Sustainability</p>
                 </div>
                 <div>
-                    <div><TiSocialFacebook className="social-icons-ti"/></div>
-                    <div><TiSocialTwitter className="social-icons-ti"/></div>
-                    <div><TiSocialInstagram className="social-icons-ti"/></div>
+                    <div><TiSocialFacebook className="social-icons-ti-footer"/></div>
+                    <div><TiSocialTwitter className="social-icons-ti-footer"/></div>
+                    <div><TiSocialInstagram className="social-icons-ti-footer"/></div>
                 </div>
             </div>
             <div className='last-footer'><p>&copy;{new Date().getFullYear()} FRESHMANN Inc. All Rights Reserved</p></div>

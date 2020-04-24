@@ -11,6 +11,7 @@
     display:flex;
     align-items:center;
     justify-content:space-between;
+    background-color:rgba(0, 0, 0, 0.007);
     // background:white;
     // color:white;
     // -moz-box-shadow: 0.5px 0.5px 0.5px rgba(128, 128, 128, 0.486);
@@ -19,7 +20,9 @@
 
     .homeNavMenu{
         font-size:.8rem;
-        color:black;
+        // color:black;
+        color:white;
+        font-weight: 600;
         cursor:pointer;
         .homeIoMenu{
             font-size:25px;
@@ -58,7 +61,8 @@
 }
 .homeNavLogo{
     a{
-        color:black;
+        // color:black;
+        color:white;
         text-decoration:none;
         letter-spacing:4px;
         font-weight: 600;
@@ -70,9 +74,11 @@
 
 @media (min-width: 0px) and (max-width: 767px) {
     .homeNavCart{
-       color:black !important;
+       color:white !important;
     }
-       
+    .homeNavBar{
+        background-color:rgba(0, 0, 0, 0.151);
+    } 
         
     
   

@@ -11208,7 +11208,7 @@ body {
 }
 
 .hero {
-  background: url("/images/fresh8.png");
+  background: url("/images/fresh20.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -11223,7 +11223,7 @@ body {
   z-index: 2;
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.904);
+  background-color: rgba(0, 0, 0, 0.774);
 }
 
 .hero-text {
@@ -11275,14 +11275,14 @@ body {
 
 .social-icons-ti {
   font-size: 25px;
-  color: black;
+  color: white;
 }
 
 .social-icons::after {
   content: '';
   width: 1px;
   height: 90px;
-  background: black;
+  background: white;
   position: absolute;
   left: 10px;
   bottom: 100px;
@@ -11444,6 +11444,7 @@ body {
 
 .navBar .navMenu {
   font-size: .8rem;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -11456,6 +11457,7 @@ body {
   cursor: pointer;
   color: black;
   font-size: .8rem;
+  font-weight: 600;
 }
 
 .navBar .navCart .aiCart {
@@ -11483,7 +11485,7 @@ body {
   left: -100%;
   width: 30%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.945);
+  background: rgba(0, 0, 0, 0.973);
   z-index: 999;
   -webkit-animation: slide-open 0.75s forwards;
           animation: slide-open 0.75s forwards;
@@ -11560,7 +11562,7 @@ body {
   left: 0;
   width: 30%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.945);
+  background: rgba(0, 0, 0, 0.973);
   z-index: 999;
   -webkit-animation: slide-close 3s forwards;
           animation: slide-close 3s forwards;
@@ -11959,6 +11961,11 @@ footer p {
   text-align: center;
 }
 
+.social-icons-ti-footer {
+  font-size: 25px;
+  color: black;
+}
+
 .checkout-body {
   margin: 1rem 0;
 }
@@ -12208,11 +12215,13 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.007);
 }
 
 .homeNavBar .homeNavMenu {
   font-size: .8rem;
-  color: black;
+  color: white;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -12252,7 +12261,7 @@ footer p {
 }
 
 .homeNavLogo a {
-  color: black;
+  color: white;
   text-decoration: none;
   letter-spacing: 4px;
   font-weight: 600;
@@ -12261,7 +12270,11 @@ footer p {
 
 @media (min-width: 0px) and (max-width: 767px) {
   .homeNavCart {
-    color: black !important;
+    color: white !important;
+  }
+
+  .homeNavBar {
+    background-color: rgba(0, 0, 0, 0.151);
   }
 }
 

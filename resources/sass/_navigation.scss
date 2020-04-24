@@ -53,6 +53,7 @@
 
     .navMenu{
         font-size:.8rem;
+        font-weight: 600;
         cursor:pointer;
         .ioMenu{
             font-size:25px;
@@ -64,6 +65,7 @@
         cursor:pointer;
         color:black;
         font-size:.8rem;
+        font-weight: 600;
         .aiCart{
             font-size:25px;
         }
@@ -92,7 +94,7 @@
     left:-100%;
     width:30%;
     height:100vh;
-    background: rgba(0, 0, 0, 0.945);
+    background: rgba(0, 0, 0, 0.973);
     z-index:999;
     // transform: translateX(-100%);
     // opacity:0;
@@ -177,7 +179,7 @@
     left:0;
     width:30%;
     height:100vh;
-    background: rgba(0, 0, 0, 0.945);
+    background: rgba(0, 0, 0, 0.973);
     z-index:999;
     animation:slide-close 3s forwards;
    

@@ -17,7 +17,7 @@
    
 }
 .hero{
-    background:url('/images/fresh8.png');
+    background:url('/images/fresh20.png');
     background-size:cover;
     background-position:top;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@
     z-index:2;
     top:0;
     right:0;
-    background-color:rgba(0, 0, 0, 0.904);
+    background-color:rgba(0, 0, 0, 0.774);
     // background-color: rgba(255, 0, 0, 0.384);
 }
 .hero-text{
@@ -82,13 +82,15 @@
 }
 .social-icons-ti{
     font-size:25px;
-    color:black;
+    // color:black;
+    color:white;
 }
 .social-icons::after{
     content:'';
     width:1px;
     height:90px;
-    background:black;
+    // background:black;
+    background:white;
     position:absolute;
     left:10px;
     bottom:100px;
