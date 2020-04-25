@@ -1,0 +1,127 @@
+.similarProducts-grid {
+  display: grid;
+  grid-row-gap: 4rem;
+  grid-column-gap: 0.7rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 2rem 14rem;
+}
+
+.similarProducts-grid p {
+  text-transform: capitalize;
+}
+
+.similarProducts-grid .featured-p {
+  margin-top: 0;
+}
+
+.similarProducts-grid .productImg {
+  object-fit: cover;
+  width: 100%;
+  height: 28.5rem;
+}
+
+.similar-products-heading {
+  text-align: center;
+}
+
+.hero-image {
+  object-fit: cover;
+  width: 100%;
+  height: 87vh;
+}
+
+.hero-image-container {
+  width: 100%;
+}
+
+.product-container {
+  height: 28.5rem;
+  width: 21rem;
+  position: relative;
+  background-color: black;
+}
+
+.fa-spinner {
+  animation: fa-spin 2s infinite linear;
+  font-size: 22px;
+}
+
+.fa-spinner-container {
+  padding: 4rem 32rem;
+}
+
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .similarProducts-grid {
+    margin-left: 5rem;
+    margin-right: 1rem;
+  }
+  .fa-spinner-container {
+    padding: 4rem 8rem;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 540px) {
+  .similarProducts-grid {
+    margin-left: 4rem;
+    margin-right: 0rem;
+  }
+  .fa-spinner-container {
+    padding: 4rem 8rem;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 767px) {
+  .similarProducts-grid {
+    margin-left: 9rem;
+    margin-right: 0rem;
+  }
+  .fa-spinner-container {
+    padding: 4rem 11rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .similarProducts-grid {
+    margin-left: 13rem;
+  }
+  .fa-spinner-container {
+    padding: 4rem 14rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .similarProducts-grid {
+    margin-left: 23rem;
+  }
+  .fa-spinner-container {
+    padding: 4rem 9rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .similarProducts-grid {
+    margin-left: 10rem;
+    margin-right: 1rem;
+  }
+  .fa-spinner-container {
+    padding: 4rem 30rem;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .similarProducts-grid {
+    margin-left: 9rem;
+  }
+  .fa-spinner-container {
+    padding: 4rem 30rem;
+  }
+}

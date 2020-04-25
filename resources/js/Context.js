@@ -52,7 +52,8 @@ class ProductProvider extends Component{
             loginError:'',
             logInMessage:'',
             regSuccessMessage:'',
-            sidebarClass: 'sideBar-opened'
+            sidebarClass: 'sideBar-opened',
+            isLoading:true
            
         
         }
@@ -375,6 +376,7 @@ class ProductProvider extends Component{
                     {   
                         storeProducts:[...productResponse.data.storeProducts],
                         categories:[...categoryResponse.data.category],
+                        isLoading:false
                      
                     }
                   
