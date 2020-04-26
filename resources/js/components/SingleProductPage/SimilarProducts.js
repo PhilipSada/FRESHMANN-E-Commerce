@@ -13,7 +13,7 @@ const SimilarProducts = ()=>(
                         <h4 className="similar-products-heading pt-4">YOU MAY ALSO LIKE</h4>
                         <div className="similarProducts-grid">
                             {
-                                isLoading ? <div>
+                                isLoading === true ? <div>
                                     <div className="fa-spinner-container">loading<FaSpinner className="fa-spinner"/></div>
                                 </div>: similarProducts.map(similarProduct => <div key={similarProduct.id} className="product-container">
                                     <div className='product-image-container'>

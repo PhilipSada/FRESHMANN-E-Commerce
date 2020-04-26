@@ -368,6 +368,11 @@ class ProductProvider extends Component{
             sideBarOpen:!sideBarOpen
         })
     }
+    isLoading(){
+        this.setState({
+            isLoading:false
+        })
+    }
    
     getStoreProducts(){
         axios.all([axios.get('/api/getStoreProducts'), axios.get('/api/category')]).then(axios.spread((productResponse, categoryResponse)=>{
@@ -376,7 +381,7 @@ class ProductProvider extends Component{
                     {   
                         storeProducts:[...productResponse.data.storeProducts],
                         categories:[...categoryResponse.data.category],
-                        isLoading:false
+                       
                      
                     }
                   
@@ -384,6 +389,7 @@ class ProductProvider extends Component{
             }, ()=>{
                 this.addTotals();
                 this.getMaxPrice();
+                this.isLoading();
                 
             })
            
