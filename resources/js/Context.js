@@ -389,7 +389,9 @@ class ProductProvider extends Component{
             }, ()=>{
                 this.addTotals();
                 this.getMaxPrice();
+                this.getSimilarProducts();
                 this.isLoading();
+                
                 
             })
            
