@@ -76,7 +76,7 @@
     color: white;
   }
   .homeNavBar .homeNavCart .homeAiCart {
-    font-size: 20px;
+    font-size: 24px;
   }
   .homeNavBar > div {
     padding: 0 27px;
@@ -85,6 +85,7 @@
     letter-spacing: 4px;
     font-weight: 600;
     font-size: .9rem;
+    padding-left: 1rem;
   }
 }
 
@@ -103,7 +104,7 @@
     color: white;
   }
   .homeNavBar .homeNavCart .homeAiCart {
-    font-size: 23px;
+    font-size: 24px;
   }
   .homeNavBar > div {
     padding: 0 27px;
@@ -112,5 +113,6 @@
     letter-spacing: 4px;
     font-weight: 600;
     font-size: .9rem;
+    padding-left: 1rem;
   }
 }
