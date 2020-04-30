@@ -12206,6 +12206,11 @@ footer p {
 }
 
 @media (min-width: 0px) and (max-width: 370px) {
+  footer {
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.192);
+  }
+
   footer p {
     font-size: 0.7rem;
     cursor: pointer;
@@ -12213,6 +12218,27 @@ footer p {
 
   .social-icons-ti-footer {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 767px) {
+  footer {
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.192);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  footer {
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.192);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  footer {
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.192);
   }
 }
 

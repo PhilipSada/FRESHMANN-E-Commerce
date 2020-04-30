@@ -36,7 +36,8 @@ footer{
 
 @media (min-width:0px) and (max-width:370px){
     footer{
-       
+        background-color:white;
+        border-top:1px solid rgba(0, 0, 0, 0.192);
     
         p{
             font-size:0.7rem;
@@ -46,4 +47,25 @@ footer{
     .social-icons-ti-footer{
         font-size:20px;
     }
+}
+@media (min-width: 371px) and (max-width: 767px) {
+    footer{
+        background-color:white;
+        border-top:1px solid rgba(0, 0, 0, 0.192);
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    footer{
+        background-color:white;
+        border-top:1px solid rgba(0, 0, 0, 0.192);
+    }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+    footer{
+        background-color:white;
+        border-top:1px solid rgba(0, 0, 0, 0.192);
+    }
+  
 }
