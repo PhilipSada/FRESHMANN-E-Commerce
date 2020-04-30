@@ -11009,7 +11009,53 @@ a.text-dark:focus {
   background: black;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 370px) {
+  .card-header {
+    font-size: 0.8rem;
+  }
+
+  .checkout-btn a {
+    font-size: 0.8rem;
+  }
+
+  .cart-summary .cart-subTotal h5,
+  .cart-summary .cart-tax h5,
+  .cart-summary .cart-total h5 {
+    font-size: 0.8rem;
+  }
+
+  .product-table th {
+    font-size: 0.6rem;
+  }
+
+  .product-table td {
+    font-size: 0.6rem;
+  }
+
+  .product-table .td-large {
+    width: 32%;
+  }
+
+  .product-table .td-smallest {
+    width: 16%;
+  }
+
+  .product-table .delete-icon {
+    font-size: 10px;
+  }
+
+  .product-table .ti-minus {
+    font-size: 12px;
+    height: 22px;
+  }
+
+  .product-table .ti-plus {
+    font-size: 12px;
+    height: 22px;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 767px) {
   .product-table .td-large {
     width: 32%;
   }
@@ -11090,11 +11136,31 @@ a.text-dark:focus {
   font-size: 28px;
 }
 
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 370px) {
+  .featured-heading {
+    font-size: 1rem;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+    padding-left: 0.6rem;
+    padding-right: 0rem;
+  }
+
+  .featured-grid p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 500px) {
   .featured-grid {
     grid-template-columns: 1fr;
     padding-left: 5rem;
     padding-right: 0rem;
+  }
+
+  .featured-heading {
+    font-size: 1.2rem;
   }
 }
 
@@ -11203,7 +11269,7 @@ body {
 
 .content {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -11366,7 +11432,35 @@ body {
   font-weight: bold;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 370px) {
+  .form-container {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .form-container h3 {
+    font-size: 1.2rem;
+  }
+
+  .form-container .form-group p {
+    float: right;
+    font-size: 0.7rem;
+  }
+
+  .form-container .form-group label {
+    font-size: 0.8rem;
+  }
+
+  .form-container .login-error {
+    font-size: 0.7rem;
+  }
+
+  .form-container button {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 767px) {
   .form-container {
     margin-left: 3rem;
     margin-right: 3rem;
@@ -11564,8 +11658,8 @@ body {
   height: 100vh;
   background: rgba(0, 0, 0, 0.973);
   z-index: 999;
-  -webkit-animation: slide-close 3s forwards;
-          animation: slide-close 3s forwards;
+  -webkit-animation: slide-close 2.5s forwards;
+          animation: slide-close 2.5s forwards;
 }
 
 .sideBar-closed ul {
@@ -11657,10 +11751,79 @@ body {
   }
 }
 
+@media (min-width: 0px) and (max-width: 370px) {
+  .navBar > div {
+    padding: 0 11px;
+  }
+
+  .navBar .navMenu {
+    font-size: .5rem;
+  }
+
+  .navBar .navMenu .ioMenu {
+    font-size: 15px;
+  }
+
+  .navBar .navCart {
+    font-size: .5rem;
+  }
+
+  .navBar .navCart .aiCart {
+    font-size: 15px;
+  }
+
+  .navLogo a {
+    padding-left: 0.5rem;
+  }
+
+  .sideBar-opened ul li {
+    font-size: 1rem;
+  }
+
+  .sideBar-opened .second-ul li {
+    font-size: 1rem;
+  }
+
+  .sideBar-closed ul li {
+    font-size: 1rem;
+  }
+
+  .sideBar-closed .second-ul li {
+    font-size: 1rem;
+  }
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   .sideBar-opened,
   .sideBar-closed {
-    width: 50%;
+    width: 70%;
+  }
+
+  .sideBar-closed {
+    -webkit-animation: slide-close 1.2s forwards;
+            animation: slide-close 1.2s forwards;
+  }
+
+  .navBar .navMenu {
+    font-size: .6rem;
+  }
+
+  .navBar .navMenu .ioMenu {
+    font-size: 23px;
+  }
+
+  .navBar .navCart {
+    font-size: .6rem;
+  }
+
+  .navBar .navCart .aiCart {
+    font-size: 23px;
+  }
+
+  .navLogo a {
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-size: .8rem;
   }
 }
 
@@ -11709,7 +11872,14 @@ body {
   color: rgba(0, 0, 255, 0.473);
 }
 
-@media (min-width: 0px) and (max-width: 540px) {
+@media (min-width: 0px) and (max-width: 370px) {
+  .display-product-grid {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 540px) {
   .display-product-grid {
     margin-left: 7rem;
     margin-right: 7rem;
@@ -11786,7 +11956,41 @@ body {
   border: 2px solid black;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 370px) {
+  .product-grid {
+    margin-left: 1.2rem;
+    margin-right: 0rem;
+    margin-top: -2rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-grid p {
+    font-size: 0.8rem;
+    padding-right: 0.5rem;
+  }
+
+  .product-grid .productImageContainer {
+    width: 320px;
+  }
+
+  .product-grid .productTextGrid {
+    width: 100%;
+  }
+
+  .product-grid .productTextGrid h2 {
+    font-size: 1.3rem;
+  }
+
+  .product-grid .productTextGrid button {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 767px) {
   .product-grid {
     margin-left: 2rem;
     margin-right: 1rem;
@@ -11800,6 +12004,10 @@ body {
 
   .product-grid .productImageContainer {
     width: 420px;
+  }
+
+  .product-grid .productTextGrid h2 {
+    font-size: 1.6rem;
   }
 }
 
@@ -11915,7 +12123,38 @@ body {
   font-weight: bold;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 370px) {
+  .side-cart-wrapper .side-cart-content {
+    width: 80%;
+  }
+
+  .side-cart-wrapper h4,
+  .side-cart-wrapper .side-cart-price {
+    font-size: 0.8rem;
+  }
+
+  .side-cart-wrapper .link-text {
+    font-size: 0.9rem;
+  }
+
+  .side-cart-wrapper .side-cart-totals {
+    font-size: 0.9rem;
+  }
+
+  .side-cart-wrapper .aiDelete {
+    font-size: 20px;
+  }
+
+  .side-cart-wrapper .side-cart-close {
+    font-size: 0.8rem;
+  }
+
+  .side-cart-wrapper .side-cart-bag {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 767px) {
   .side-cart-wrapper .side-cart-content {
     width: 60%;
   }
@@ -11964,6 +12203,17 @@ footer p {
 .social-icons-ti-footer {
   font-size: 25px;
   color: black;
+}
+
+@media (min-width: 0px) and (max-width: 370px) {
+  footer p {
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+
+  .social-icons-ti-footer {
+    font-size: 20px;
+  }
 }
 
 .checkout-body {
@@ -12268,13 +12518,69 @@ footer p {
   background-color: rgba(255, 255, 255, 0.021);
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
-  .homeNavCart {
-    color: white !important;
-  }
-
+@media (min-width: 0px) and (max-width: 370px) {
   .homeNavBar {
     background-color: rgba(0, 0, 0, 0.151);
+  }
+
+  .homeNavBar .homeNavMenu {
+    font-size: .6rem;
+  }
+
+  .homeNavBar .homeNavMenu .homeIoMenu {
+    font-size: 20px;
+  }
+
+  .homeNavBar .homeNavCart {
+    font-size: .6rem;
+    color: white;
+  }
+
+  .homeNavBar .homeNavCart .homeAiCart {
+    font-size: 20px;
+  }
+
+  .homeNavBar > div {
+    padding: 0 27px;
+  }
+
+  .homeNavLogo a {
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-size: .9rem;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 767px) {
+  .homeNavBar {
+    background-color: rgba(0, 0, 0, 0.151);
+  }
+
+  .homeNavBar .homeNavMenu {
+    font-size: .8rem;
+  }
+
+  .homeNavBar .homeNavMenu .homeIoMenu {
+    font-size: 23px;
+  }
+
+  .homeNavBar .homeNavCart {
+    font-size: .8rem;
+    color: white;
+  }
+
+  .homeNavBar .homeNavCart .homeAiCart {
+    font-size: 23px;
+  }
+
+  .homeNavBar > div {
+    padding: 0 27px;
+  }
+
+  .homeNavLogo a {
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-size: .9rem;
   }
 }
 
@@ -12473,7 +12779,26 @@ footer p {
   }
 }
 
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 370px) {
+  .similarProducts-grid {
+    margin-left: 0.8rem;
+    margin-right: 0.5rem;
+  }
+
+  .similarProducts-grid p {
+    font-size: 0.9rem;
+  }
+
+  .fa-spinner-container {
+    padding: 4rem 8rem;
+  }
+
+  .similar-products-heading {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 500px) {
   .similarProducts-grid {
     margin-left: 5rem;
     margin-right: 1rem;
@@ -12481,6 +12806,10 @@ footer p {
 
   .fa-spinner-container {
     padding: 4rem 8rem;
+  }
+
+  .similar-products-heading {
+    font-size: 1.2rem;
   }
 }
 
@@ -12667,5 +12996,15 @@ footer p {
 .admin-form select,
 .admin-form option {
   font-size: 1rem !important;
+}
+
+@media (min-width: 0px) and (max-width: 370px) {
+  .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .pageheader-title {
+    font-size: 1rem;
+  }
 }
 

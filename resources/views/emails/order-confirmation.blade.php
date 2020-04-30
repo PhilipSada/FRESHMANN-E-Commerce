@@ -21,9 +21,9 @@
     <body>
        
          {{--  new html email template  --}}
-         <div style='margin:0 auto; width:600px;'> 
+         <div style='margin-top:2rem; margin-bottom:2rem; margin-left:2rem; width:730px;'> 
     
-            <div style="text-align:center; width:200px; margin:0 auto">
+            <div style="text-align:center">
                <h2>FRESHMANN</h2>
             </div>
         

@@ -71,14 +71,66 @@
         // border:1px solid white;
     }
 }
-
-@media (min-width: 0px) and (max-width: 767px) {
-    .homeNavCart{
-       color:white !important;
-    }
+@media (min-width:0px) and (max-width:370px){
     .homeNavBar{
         background-color:rgba(0, 0, 0, 0.151);
-    } 
+        .homeNavMenu{
+            font-size: .6rem;
+            .homeIoMenu{
+                font-size:20px;
+            }
+        }
+        .homeNavCart{
+            font-size:.6rem;
+            color:white;
+            .homeAiCart{
+                font-size:20px;
+            }
+    
+        } 
+    }
+    .homeNavBar > div{
+        padding:0 27px;
+    }
+    
+    .homeNavLogo{
+        a{
+            letter-spacing:4px;
+            font-weight: 600;
+            font-size: .9rem;
+        }
+    }   
+
+}
+@media (min-width: 371px) and (max-width: 767px) {
+    .homeNavBar{
+        background-color:rgba(0, 0, 0, 0.151);
+        .homeNavMenu{
+            font-size: .8rem;
+            .homeIoMenu{
+                font-size:23px;
+            }
+        }
+        .homeNavCart{
+            font-size:.8rem;
+            color:white;
+            .homeAiCart{
+                font-size:23px;
+            }
+    
+        } 
+    }
+    .homeNavBar > div{
+        padding:0 27px;
+    }
+    
+    .homeNavLogo{
+        a{
+            letter-spacing:4px;
+            font-weight: 600;
+            font-size: .9rem;
+        }
+    }   
         
     
   

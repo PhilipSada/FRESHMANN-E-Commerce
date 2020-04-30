@@ -63,12 +63,30 @@
         font-size:28px;
     }
 }
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width:0px) and (max-width:370px){
+    .featured-heading{
+        font-size:1rem;
+    }
+    .featured-grid{
+        grid-template-columns: 1fr;
+        padding-left:0.6rem;
+        padding-right:0rem;
+
+        p{
+            font-size:0.9rem;
+        }
+        
+    }
+}
+@media (min-width: 371px) and (max-width: 500px) {
     .featured-grid{
         grid-template-columns: 1fr;
         padding-left:5rem;
         padding-right:0rem;
         
+    }
+    .featured-heading{
+        font-size:1.2rem;
     }
        
         

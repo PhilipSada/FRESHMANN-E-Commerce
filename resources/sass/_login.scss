@@ -40,7 +40,33 @@
     
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width:0px) and (max-width:370px){
+    .form-container{
+        margin-left:3rem;
+        margin-right:3rem;
+
+        h3{
+            font-size:1.2rem;
+        }
+        .form-group{
+            p{
+                float:right;
+                font-size:0.7rem;
+            }
+            label{
+                font-size:0.8rem;
+            }
+        }
+        .login-error{
+            font-size:0.7rem;
+        }
+        button{
+            font-size:1rem;
+        }
+    }  
+   
+}
+@media (min-width: 371px) and (max-width: 767px) {
   
      .form-container{
          margin-left:3rem;

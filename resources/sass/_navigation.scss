@@ -181,7 +181,7 @@
     height:100vh;
     background: rgba(0, 0, 0, 0.973);
     z-index:999;
-    animation:slide-close 3s forwards;
+    animation:slide-close 2.5s forwards;
    
    
     
@@ -277,11 +277,87 @@
     100%{left:-100%}
 }
 
+@media(min-width:0px) and (max-width:370px){
+    .navBar > div{
+        padding:0 11px;
+    }
+    .navBar{
+        .navMenu{
+            font-size: .5rem;
+            .ioMenu{
+                font-size:15px;
+            }
+        }
+        .navCart{
+            font-size:.5rem;
+            .aiCart{
+                font-size:15px;
+            }
+    
+        } 
+    }
+    .navLogo{
+        a{
+           padding-left:0.5rem;
+        }
+    }
+    .sideBar-opened{
+        ul{
+            li{
+                font-size:1rem;
+            }
+        }
+        .second-ul{
+            li{
+                font-size:1rem;
+            }
+        }
+    }
+    .sideBar-closed{
+        ul{
+            li{
+                font-size:1rem;
+            }
+        }
+        .second-ul{
+            li{
+                font-size:1rem;
+            }
+        }
+    }
+
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
     .sideBar-opened, .sideBar-closed{
-       width:50%;
+       width:70%;
     }
-       
+    .sideBar-closed{
+        animation:slide-close 1.2s forwards;
+    }
+    .navBar{
+        .navMenu{
+            font-size: .6rem;
+            .ioMenu{
+                font-size:23px;
+            }
+        }
+        .navCart{
+            font-size:.6rem;
+            .aiCart{
+                font-size:23px;
+            }
+    
+        } 
+    }
+    
+    .navLogo{
+        a{
+            letter-spacing:4px;
+            font-weight: 600;
+            font-size: .8rem;
+        }
+    }  
         
     
   

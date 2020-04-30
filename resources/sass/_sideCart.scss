@@ -108,7 +108,35 @@
     font-weight:bold;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width:0px) and (max-width:370px){
+    .side-cart-wrapper{
+        .side-cart-content{
+            width:80%;
+        }
+        h4, .side-cart-price{
+            font-size:0.8rem;
+        }
+        .link-text{
+            font-size:0.9rem;
+        }
+        .side-cart-totals{
+            font-size:0.9rem;
+        }
+        .aiDelete{
+            font-size:20px;
+           
+        }
+        .side-cart-close{
+            font-size:0.8rem;
+        }
+        .side-cart-bag{
+            font-size:0.8rem;
+            
+        }
+    }
+    
+}
+@media (min-width: 371px) and (max-width: 767px) {
   
      .side-cart-wrapper{
          .side-cart-content{

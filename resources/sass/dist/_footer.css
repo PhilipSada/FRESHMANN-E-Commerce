@@ -1,0 +1,42 @@
+footer {
+  margin-top: 10rem;
+  margin-bottom: 0rem;
+  height: 42vh;
+  background-color: rgba(211, 211, 211, 0.473);
+}
+
+footer p {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.footer-heading {
+  font-weight: bold;
+}
+
+.last-footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.social-icons-ti-footer {
+  font-size: 25px;
+  color: black;
+}
+
+@media (min-width: 0px) and (max-width: 370px) {
+  footer p {
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+  .social-icons-ti-footer {
+    font-size: 20px;
+  }
+}

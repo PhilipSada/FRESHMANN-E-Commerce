@@ -15,7 +15,7 @@ const SideCart = () => (
                                         <div className="side-cart-wrapper">
                                             <div className="side-cart-content">
                                                 <div className="side-cart-close" onClick={closeCart} >CLOSE</div>
-                                                <div className="pl-2">MY BAG ({cartItems})</div>
+                                                <div className="pl-2 side-cart-bag">MY BAG ({cartItems})</div>
                                                 {cart.length===0?<div>
                                                   <h4 className="side-cart-info">Your Shopping Bag Is Empty</h4>
                                                   <h4 className="pt-4 side-cart-info-2">Please add items to your bag</h4>
@@ -47,9 +47,9 @@ const SideCart = () => (
                                             
                                                 )
                                             } 
-                                                <div className="pl-2 pt-2"><span className="bold-total">SubTotal:</span>${cartSubTotal}</div>
-                                                <div className="pl-2"><span className="bold-total">Tax:</span>${cartTax}  </div>
-                                                <div className="pl-2"><span className="bold-total">CartTotal:</span> ${cartTotal}</div>
+                                                <div className="pl-2 pt-2 side-cart-totals"><span className="bold-total">SubTotal:</span>${cartSubTotal}</div>
+                                                <div className="pl-2 side-cart-totals"><span className="bold-total">Tax:</span>${cartTax}  </div>
+                                                <div className="pl-2 side-cart-totals"><span className="bold-total">CartTotal:</span> ${cartTotal}</div>
                                                {/* <div className="link-bag-button"><a href="/cart" className="link-text">View Bag</a></div> */}
                                                {
                                                   localStorage.userToken ?<div>

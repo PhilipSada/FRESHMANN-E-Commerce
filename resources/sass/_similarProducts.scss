@@ -54,13 +54,33 @@
     }
 }
 
-@media (min-width: 0px) and (max-width: 500px) {
+
+@media (min-width:0px) and (max-width:370px){
+    .similarProducts-grid{
+        margin-left:0.8rem;
+        margin-right:0.5rem;
+
+        p{
+            font-size:0.9rem;
+        }
+    }
+    .fa-spinner-container{
+     padding:4rem 8rem;
+  }
+  .similar-products-heading{
+      font-size:1rem;
+  }
+}
+@media (min-width: 371px) and (max-width: 500px) {
    .similarProducts-grid{
        margin-left:5rem;
        margin-right:1rem;
    }
    .fa-spinner-container{
     padding:4rem 8rem;
+ }
+ .similar-products-heading{
+     font-size:1.2rem;
  }
         
     
