@@ -279,26 +279,31 @@
 
 @media(min-width:0px) and (max-width:370px){
     .navBar > div{
-        padding:0 11px;
+        padding:0 9px;
     }
     .navBar{
         .navMenu{
-            font-size: .5rem;
+            span{
+                display:none;
+            }
             .ioMenu{
-                font-size:15px;
+                font-size:25px;
             }
         }
         .navCart{
             font-size:.5rem;
+            span{
+                display:none;
+            }
             .aiCart{
-                font-size:15px;
+                font-size:19px;
             }
     
         } 
     }
     .navLogo{
         a{
-           padding-left:0.5rem;
+           padding-left:0.8rem;
         }
     }
     .sideBar-opened{
@@ -337,13 +342,18 @@
     }
     .navBar{
         .navMenu{
-            font-size: .6rem;
+            span{
+                display:none;
+            }
             .ioMenu{
-                font-size:23px;
+                font-size:25px;
             }
         }
         .navCart{
             font-size:.6rem;
+            span{
+                display:none;
+            }
             .aiCart{
                 font-size:23px;
             }

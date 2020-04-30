@@ -11753,27 +11753,31 @@ body {
 
 @media (min-width: 0px) and (max-width: 370px) {
   .navBar > div {
-    padding: 0 11px;
+    padding: 0 9px;
   }
 
-  .navBar .navMenu {
-    font-size: .5rem;
+  .navBar .navMenu span {
+    display: none;
   }
 
   .navBar .navMenu .ioMenu {
-    font-size: 15px;
+    font-size: 25px;
   }
 
   .navBar .navCart {
     font-size: .5rem;
   }
 
+  .navBar .navCart span {
+    display: none;
+  }
+
   .navBar .navCart .aiCart {
-    font-size: 15px;
+    font-size: 19px;
   }
 
   .navLogo a {
-    padding-left: 0.5rem;
+    padding-left: 0.8rem;
   }
 
   .sideBar-opened ul li {
@@ -11804,16 +11808,20 @@ body {
             animation: slide-close 1.2s forwards;
   }
 
-  .navBar .navMenu {
-    font-size: .6rem;
+  .navBar .navMenu span {
+    display: none;
   }
 
   .navBar .navMenu .ioMenu {
-    font-size: 23px;
+    font-size: 25px;
   }
 
   .navBar .navCart {
     font-size: .6rem;
+  }
+
+  .navBar .navCart span {
+    display: none;
   }
 
   .navBar .navCart .aiCart {
