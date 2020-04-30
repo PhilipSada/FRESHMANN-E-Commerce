@@ -75,9 +75,11 @@
     .homeNavBar{
         background-color:rgba(0, 0, 0, 0.151);
         .homeNavMenu{
-            font-size: .6rem;
+            span{
+                display: none;
+            }
             .homeIoMenu{
-                font-size:20px;
+                font-size:25px;
             }
         }
         .homeNavCart{
@@ -106,9 +108,11 @@
     .homeNavBar{
         background-color:rgba(0, 0, 0, 0.151);
         .homeNavMenu{
-            font-size: .8rem;
+            span{
+                display:none;
+            }
             .homeIoMenu{
-                font-size:23px;
+                font-size:25px;
             }
         }
         .homeNavCart{

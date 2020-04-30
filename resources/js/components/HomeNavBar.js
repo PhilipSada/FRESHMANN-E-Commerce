@@ -14,7 +14,7 @@ const HomeNavBar = ()=>(
                 <div> 
                     <nav className="homeNavBar">
                     
-                        <div className="homeNavMenu" onClick={handleSideBar}><IoIosMenu className="homeIoMenu"/>MENU</div>
+                        <div className="homeNavMenu" onClick={handleSideBar}><IoIosMenu className="homeIoMenu"/><span>MENU</span></div>
                         <div className="homeNavLogo"><a href="/" className="homeLinkLogo">FRESHMANN</a></div>
                         <div className="homeNavIcons">
                             <a href="/cart" className="homeNavCart"><AiOutlineShopping className="homeAiCart"/><div className="cart-no">{cartItems} </div> </a>
