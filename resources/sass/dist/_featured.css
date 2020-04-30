@@ -49,7 +49,7 @@
 
 @media (min-width: 0px) and (max-width: 370px) {
   .featured-heading {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .featured-grid {
     grid-template-columns: 1fr;
@@ -68,7 +68,7 @@
     padding-right: 0rem;
   }
   .featured-heading {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -78,6 +78,9 @@
     padding-left: 6rem;
     padding-right: 0rem;
   }
+  .featured-heading {
+    font-size: 1.3rem;
+  }
 }
 
 @media (min-width: 541px) and (max-width: 767px) {
@@ -85,6 +88,9 @@
     grid-template-columns: 1fr;
     padding-left: 10rem;
     padding-right: 3rem;
+  }
+  .featured-heading {
+    font-size: 1.3rem;
   }
 }
 

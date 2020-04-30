@@ -11138,7 +11138,7 @@ a.text-dark:focus {
 
 @media (min-width: 0px) and (max-width: 370px) {
   .featured-heading {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .featured-grid {
@@ -11160,7 +11160,7 @@ a.text-dark:focus {
   }
 
   .featured-heading {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -11170,6 +11170,10 @@ a.text-dark:focus {
     padding-left: 6rem;
     padding-right: 0rem;
   }
+
+  .featured-heading {
+    font-size: 1.3rem;
+  }
 }
 
 @media (min-width: 541px) and (max-width: 767px) {
@@ -11177,6 +11181,10 @@ a.text-dark:focus {
     grid-template-columns: 1fr;
     padding-left: 10rem;
     padding-right: 3rem;
+  }
+
+  .featured-heading {
+    font-size: 1.3rem;
   }
 }
 
