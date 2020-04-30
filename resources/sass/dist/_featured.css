@@ -49,7 +49,7 @@
 
 @media (min-width: 0px) and (max-width: 370px) {
   .featured-heading {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .featured-grid {
     grid-template-columns: 1fr;
