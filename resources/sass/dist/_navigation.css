@@ -62,6 +62,7 @@
   text-decoration: none;
   letter-spacing: 4px;
   font-weight: 600;
+  padding-left: 0.8rem;
 }
 
 .sideBar-opened {
@@ -230,7 +231,7 @@
 
 @media (min-width: 0px) and (max-width: 370px) {
   .navBar > div {
-    padding: 0 9px;
+    padding: 0 8px;
   }
   .navBar .navMenu span {
     display: none;
@@ -248,7 +249,7 @@
     font-size: 19px;
   }
   .navLogo a {
-    padding-left: 0.8rem;
+    padding-left: 1.2rem;
   }
   .sideBar-opened ul li {
     font-size: 1rem;
@@ -290,6 +291,7 @@
     letter-spacing: 4px;
     font-weight: 600;
     font-size: .8rem;
+    padding-left: 1.2rem;
   }
 }
 

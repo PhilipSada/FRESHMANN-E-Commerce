@@ -1,0 +1,11 @@
+@media (min-width: 0px) and (max-width: 370px) {
+  .nav-info p {
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 767px) {
+  .nav-info p {
+    padding-left: 1rem;
+  }
+}
