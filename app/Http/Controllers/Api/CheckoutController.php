@@ -84,7 +84,7 @@ class CheckoutController extends Controller
             //successful
             return response()->json(['success'=>'Payment Successful', 'result'=>$cart]);
         }catch(Exception $e){
-             
+            return response()->json(['error'=>'Payment was not successful']);
         }
     }
 }

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {CardElement, injectStripe, CardNumberElement, CardCVCElement, CardExpiryElement} from 'react-stripe-elements';
 import axios from 'axios';
+import {FaSpinner} from 'react-icons/fa';
 
 
 
@@ -27,7 +28,9 @@ class PaymentForm extends Component{
             order_ref:'',
             success:'',
             view:'order-confirmation',
-            subject:'order-confirmation'
+            subject:'order-confirmation',
+            loading:false,
+            error:''
         }
 
        //bind
@@ -76,14 +79,20 @@ class PaymentForm extends Component{
         localStorage.removeItem('cartItems');
 
     }
+    loading(){
+        this.setState({
+            loading:true
+        });
+    }
   
     async getStripeToken(e){
         e.preventDefault();
-     
+        
 
         let token = await this.props.stripe.createToken({name:this.state.name});
         console.log(token.token.id)
-
+        
+        this.loading();
         this.loggedInUser();
         this.getOrderId();
         const userData = {
@@ -107,6 +116,7 @@ class PaymentForm extends Component{
         await axios.post('/api/payment', userData).then(
             paymentResponse =>{
                 console.log(paymentResponse.data)
+                console.log(paymentResponse.data.error)
                 if(paymentResponse){
                     console.log('charge added')
                     this.setState({
@@ -117,7 +127,13 @@ class PaymentForm extends Component{
                 }
             } 
             
-        )
+        ).catch(error => {
+            if(error){
+                this.setState({
+                    error:'payment error'
+                })
+            }
+        })
 
        
        
@@ -202,7 +218,27 @@ class PaymentForm extends Component{
                         </div>
                     </div>
                   </div>
-
+                   
+                }
+                {
+                    this.state.loading === true ? <div>
+                             <div className="payment-loading-wrapper">
+                                <div className="payment-loading-content">
+                                    {
+                                        this.state.error !== 'payment error' ? <div className="inner-content">
+                                             <h4 className="processing">Your payment is being processed, please wait...</h4>
+                                                <div className="payment-fa-spinner-container">
+                                                    <FaSpinner className="payment-fa-spinner"/>
+                                                </div>
+                                        </div>:<div className="inner-content">
+                                            <h4 className="unsuccessful">Payment Unsuccessful</h4>
+                                            <a href="/checkout" className="try-again">Try Again</a>
+                                        </div>
+                                    }
+                                   
+                                </div>
+                           </div>
+                    </div>:null
                 }
                 
                

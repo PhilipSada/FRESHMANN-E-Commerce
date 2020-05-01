@@ -14,6 +14,73 @@
     }
 }
 
+.payment-loading-wrapper{
+    position: fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:100%;
+    background:rgba(0, 0, 0, 0.651);
+    z-index:2;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.payment-loading-content{
+    width:35%;
+    // top:50%;
+    // left:50%;
+    height:40vh;
+    background:white;
+    box-shadow: 0px 5px 5px white;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+
+   .processing{
+       text-align: center;
+       font-size:1.3rem
+   }
+   .unsuccessful{
+       text-align: center;
+       font-size:1.3rem;
+   }
+}
+.inner-content{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+}
+.payment-fa-spinner {
+    animation: payment-fa-spin 2s infinite linear;
+    font-size:40px;
+}
+.payment-fa-spinner-container{
+    padding-top:1rem;
+}
+@keyframes payment-fa-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+    }
+}
+.try-again{
+    padding:0.8rem 2rem;
+    margin-top:1rem;
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    border:1px solid black;
+    &:hover{
+        color:white;
+        text-decoration:none;
+    }
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   
         .payment-nav{
@@ -22,6 +89,30 @@
             .payment-enquiry{
                 display:none;
             }
+        }
+        .payment-loading-content{
+            width:55%;
+
+
+            .processing{
+                font-size:1rem;
+                text-align: center;
+            }
+            .unsuccessful{
+                font-size:1rem;
+            }
+        
+        }
+        .try-again{
+            font-size:0.8rem;
+            padding:0.5rem 1rem;
+            margin-top:0.8rem;
+        }
+        .payment-fa-spinner{
+            font-size:30px;
+        }
+        .payment-fa-spinner-container{
+            padding-top:0.8rem;
         }
     
   
@@ -36,6 +127,29 @@
             display:none;
         }
     }
+    .payment-loading-content{
+        width:50%;
+
+        .processing{
+            font-size:1rem;
+            text-align: center;
+        }
+        .unsuccessful{
+            font-size:1rem;
+        }
+    
+    }
+    .try-again{
+        font-size:0.8rem;
+        padding:0.5rem 1rem;
+        margin-top:0.8rem;
+    }
+    .payment-fa-spinner{
+        font-size:30px;
+    }
+    .payment-fa-spinner-container{
+        padding-top:0.8rem;
+    }
    
 }
 // Large devices (desktops, 992px and up)
@@ -47,8 +161,76 @@
             display:none;
         }
     }
+    .payment-loading-content{
+        width:50%;
+
+        .processing{
+            font-size:1.2rem;
+            text-align: center;
+        }
+        .unsuccessful{
+            font-size:1.2rem;
+        }
+    
+    }
+    .try-again{
+        font-size:0.8rem;
+        padding:0.5rem 1rem;
+        margin-top:0.8rem;
+    }
+    .payment-fa-spinner{
+        font-size:30px;
+    }
+    .payment-fa-spinner-container{
+        padding-top:0.8rem;
+    }
   
 }
   
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .payment-loading-content{
+        .processing{
+            font-size:1.2rem;
+            text-align: center;
+        }
+        .unsuccessful{
+            font-size:1.2rem;
+        }
+    
+    }
+    .try-again{
+        font-size:0.8rem;
+        padding:0.5rem 1rem;
+        margin-top:0.8rem;
+    }
+    .payment-fa-spinner{
+        font-size:30px;
+    }
+    .payment-fa-spinner-container{
+        padding-top:0.8rem;
+    }
+ }
+@media (min-width: 1400px) and (max-width: 1500px) {
+    .payment-loading-content{
+        .processing{
+            font-size:1.2rem;
+            text-align: center;
+        }
+        .unsuccessful{
+            font-size:1.2rem;
+        }
+    
+    }
+    .try-again{
+        font-size:0.8rem;
+        padding:0.5rem 1rem;
+        margin-top:0.8rem;
+    }
+    .payment-fa-spinner{
+        font-size:30px;
+    }
+    .payment-fa-spinner-container{
+        padding-top:0.8rem;
+    }
+ }
