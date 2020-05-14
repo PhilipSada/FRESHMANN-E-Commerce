@@ -71,8 +71,11 @@
         // border:1px solid white;
     }
 }
-@media (min-width:0px) and (max-width:370px){
+
+
+@media (max-width:599px){
     .homeNavBar{
+        overflow-x: hidden !important;
         background-color:rgba(0, 0, 0, 0.151);
         .homeNavMenu{
             span{
@@ -103,11 +106,10 @@
             padding-left:1rem;
         }
     }   
-
 }
-@media (min-width: 371px) and (max-width: 767px) {
+@media (min-width:600px){
     .homeNavBar{
-        background-color:rgba(0, 0, 0, 0.151);
+        background-color:rgba(0, 0, 0, 0.007);
         .homeNavMenu{
             span{
                 display:none;
@@ -133,23 +135,53 @@
         a{
             letter-spacing:4px;
             font-weight: 600;
-            font-size: .9rem;
+            font-size: 1rem;
+            padding-left:0rem;
+        }
+    }   
+        
+}
+@media (min-width:900px){
+   
+}
+@media (min-width:1200px){
+    .homeNavBar{
+        background-color:rgba(0, 0, 0, 0.007);
+        .homeNavMenu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                display:block;
+            }
+            .homeIoMenu{
+                font-size:25px;
+            }
+        }
+        .homeNavCart{
+            font-size:.8rem;
+            color:white;
+            .homeAiCart{
+                font-size:24px;
+            }
+    
+        } 
+    }
+    .homeNavBar > div{
+        padding:0 30px;
+    }
+    
+    .homeNavLogo{
+        a{
+            letter-spacing:4px;
+            font-weight: 600;
+            font-size: 1rem;
             padding-left:1rem;
         }
     }   
         
-    
-  
 }
-  
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991px) {
-    
+@media (min-width:1500px){
+   
 }
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199px) {
-  
-}
-  
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { }
+

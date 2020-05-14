@@ -31,7 +31,7 @@ footer p {
   color: black;
 }
 
-@media (min-width: 0px) and (max-width: 370px) {
+@media (max-width: 599px) {
   footer {
     background-color: white;
     border-top: 1px solid rgba(0, 0, 0, 0.192);
@@ -45,23 +45,16 @@ footer p {
   }
 }
 
-@media (min-width: 371px) and (max-width: 767px) {
+@media (min-width: 600px) {
   footer {
     background-color: white;
     border-top: 1px solid rgba(0, 0, 0, 0.192);
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 1500px) {
   footer {
-    background-color: white;
-    border-top: 1px solid rgba(0, 0, 0, 0.192);
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  footer {
-    background-color: white;
-    border-top: 1px solid rgba(0, 0, 0, 0.192);
+    background-color: rgba(211, 211, 211, 0.473);
+    border: none;
   }
 }

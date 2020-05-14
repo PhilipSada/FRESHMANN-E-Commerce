@@ -115,72 +115,54 @@
         }
     }
 }
-@media (min-width: 0px) and (max-width:370px){
-     .card-header{
-         font-size:0.8rem;
-     }
-     .checkout-btn{
-         a{
-             font-size:0.8rem;
-         }
-     }
-     
-    .cart-summary{
-        .cart-subTotal, .cart-tax, .cart-total{
-            h5{
-                font-size:0.8rem;
-            }
-        
+@media (max-width:599px){
+    .card-header{
+        font-size:0.8rem;
+    }
+    .checkout-btn{
+        a{
+            font-size:0.8rem;
         }
     }
-    .product-table{ 
-        th{
-            font-size:0.6rem;
-        }
-        td{
-            font-size:0.6rem;
-        }   
-        .td-large{
-            width:32%;
-        }
-        .td-smallest{
-            width:16%;
-        }
-        .delete-icon{
-            font-size:10px;
-        }
-        .ti-minus{
-            font-size:12px;
-            height:22px;
-        
-        }
-        .ti-plus{
-            font-size:12px;
-            height:22px;
-           
-        }
-       
-    }
-     
-}
-@media (min-width: 371px) and (max-width: 767px) {
-  
-        .product-table{
-            
-            .td-large{
-                width:32%;
-            }
-            .td-smallest{
-                width:16%;
-            }
-        }
     
-  
+   .cart-summary{
+       .cart-subTotal, .cart-tax, .cart-total{
+           h5{
+               font-size:0.8rem;
+           }
+       
+       }
+   }
+   .product-table{ 
+       th{
+           font-size:0.6rem;
+       }
+       td{
+           font-size:0.6rem;
+       }   
+       .td-large{
+           width:32%;
+       }
+       .td-smallest{
+           width:16%;
+       }
+       .delete-icon{
+           font-size:10px;
+       }
+       .ti-minus{
+           font-size:12px;
+           height:22px;
+       
+       }
+       .ti-plus{
+           font-size:12px;
+           height:22px;
+          
+       }
+      
+   }
 }
-  
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991px) {
-   
+@media (min-width:600px){
     .product-table{
             
         .td-large{
@@ -191,9 +173,7 @@
         }
     }
 }
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199px) {
-   
+@media (min-width:900px){
     .product-table{
             
         .td-large{
@@ -204,6 +184,17 @@
         }
     }
 }
-  
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { }
+@media (min-width:1200px){
+    .product-table{
+            
+        .td-large{
+            width:40%;
+        }
+        .td-smallest{
+            width:8%;
+        }
+    }
+}
+@media (min-width:1500px){
+   
+}

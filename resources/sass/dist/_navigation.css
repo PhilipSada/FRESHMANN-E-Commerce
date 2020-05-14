@@ -229,9 +229,12 @@
   }
 }
 
-@media (min-width: 0px) and (max-width: 370px) {
+@media (max-width: 599px) {
   .navBar > div {
     padding: 0 8px;
+  }
+  .navBar {
+    overflow-x: hidden !important;
   }
   .navBar .navMenu span {
     display: none;
@@ -251,11 +254,18 @@
   .navLogo a {
     padding-left: 1.2rem;
   }
+  .sideBar-opened {
+    width: 70%;
+  }
   .sideBar-opened ul li {
     font-size: 1rem;
   }
   .sideBar-opened .second-ul li {
     font-size: 1rem;
+  }
+  .sideBar-closed {
+    width: 70%;
+    animation: slide-close 1.2s forwards;
   }
   .sideBar-closed ul li {
     font-size: 1rem;
@@ -265,38 +275,46 @@
   }
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
-  .sideBar-opened, .sideBar-closed {
-    width: 70%;
+@media (min-width: 600px) {
+  .sideBar-opened {
+    width: 50%;
+  }
+  .sideBar-opened ul li {
+    font-size: 1rem;
+  }
+  .sideBar-opened .second-ul li {
+    font-size: 1rem;
   }
   .sideBar-closed {
+    width: 50%;
     animation: slide-close 1.2s forwards;
   }
-  .navBar .navMenu span {
-    display: none;
+  .sideBar-closed ul li {
+    font-size: 1rem;
   }
-  .navBar .navMenu .ioMenu {
-    font-size: 25px;
-  }
-  .navBar .navCart {
-    font-size: .6rem;
-  }
-  .navBar .navCart span {
-    display: none;
-  }
-  .navBar .navCart .aiCart {
-    font-size: 23px;
-  }
-  .navLogo a {
-    letter-spacing: 4px;
-    font-weight: 600;
-    font-size: .8rem;
-    padding-left: 1.2rem;
+  .sideBar-closed .second-ul li {
+    font-size: 1rem;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  #contact-page {
-    padding: 20px;
+@media (min-width: 1200px) {
+  .sideBar-opened {
+    width: 30%;
+  }
+  .sideBar-opened ul li {
+    font-size: 1.2rem;
+  }
+  .sideBar-opened .second-ul li {
+    font-size: 1.2rem;
+  }
+  .sideBar-closed {
+    width: 30%;
+    animation: slide-close 2.5s forwards;
+  }
+  .sideBar-closed ul li {
+    font-size: 1.2rem;
+  }
+  .sideBar-closed .second-ul li {
+    font-size: 1.2rem;
   }
 }

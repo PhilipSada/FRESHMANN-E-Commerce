@@ -1,0 +1,132 @@
+.cartItem-heading {
+  border-top: 1px solid rgba(0, 0, 0, 0.363);
+  padding-top: 1rem;
+  padding-bottom: 0.2rem;
+}
+
+.cartItem-heading h5 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.cartItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.cartItems h5 {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.cartItems .cartItem-image-container {
+  height: 170px;
+  width: 25%;
+}
+
+.cartItems .cartItem-image-container .cartItem-image {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.cartItems .cartItem-price, .cartItems .cartItem-qty, .cartItems .cartItem-total {
+  display: flex;
+  align-items: center;
+}
+
+.cartItems .cartItem-info {
+  height: 155px;
+  width: 75%;
+}
+
+.stripe-payment-button {
+  border: 1px solid rgba(0, 0, 0, 0.89);
+  border-radius: 5px;
+  padding: 0.2rem 3rem;
+  background: rgba(0, 0, 0, 0.89);
+  color: white;
+}
+
+.stripe-payment-button:hover {
+  border: 2px solid black;
+  background: black;
+}
+
+.stripe-card {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-payment-options {
+  display: flex;
+  align-items: center;
+}
+
+.card-payment-options .visa-image-container, .card-payment-options .mastercard-image-container {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.card-payment-options .visa-image, .card-payment-options .mastercard-image {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.card-payment-options p {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.card-payment-options .card-payment-text {
+  height: 50px;
+}
+
+@media (max-width: 599px) {
+  .cartItems .cartItem-image-container {
+    width: 27%;
+  }
+}
+
+@media (min-width: 600px) {
+  .cartItems .cartItem-image-container {
+    width: 50% !important;
+  }
+  .cartItems .cartItem-info {
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .cartItems .cartItem-image-container {
+    width: 50% !important;
+  }
+  .cartItems .cartItem-info {
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cartItems .cartItem-image-container {
+    width: 30% !important;
+  }
+  .cartItems .cartItem-info {
+    width: 70% !important;
+  }
+}
+
+@media (min-width: 1500px) {
+  .cartItems .cartItem-image-container {
+    width: 25% !important;
+  }
+  .cartItems .cartItem-info {
+    width: 75% !important;
+  }
+}

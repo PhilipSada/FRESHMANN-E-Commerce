@@ -85,7 +85,10 @@
   bottom: 100px;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (max-width: 599px) {
+  .content {
+    overflow-x: hidden !important;
+  }
   .overlay {
     display: none;
   }
@@ -94,19 +97,19 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 600px) {
   .overlay {
-    width: 35%;
+    width: 40%;
   }
   .hero-text {
-    width: 27%;
+    width: 31%;
   }
   .hero-text h2 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 900px) {
   .overlay {
     width: 40%;
   }
@@ -115,5 +118,17 @@
   }
   .hero-text h2 {
     font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .overlay {
+    width: 37%;
+  }
+  .hero-text {
+    width: 28%;
+  }
+  .hero-text h2 {
+    font-size: 3rem;
   }
 }
