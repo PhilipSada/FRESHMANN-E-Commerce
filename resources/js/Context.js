@@ -562,7 +562,8 @@ class ProductProvider extends Component{
         }
         
         cartItem.total=cartItem.count*cartItem.price;
-        cartItem.total= parseFloat(cartItem.total.toFixed(2));
+        // cartItem.total= parseFloat(cartItem.total.toFixed(2));
+        cartItem.total= parseFloat(cartItem.total);
  
         this.setState(()=>{
             return (
@@ -585,7 +586,8 @@ class ProductProvider extends Component{
             this.removeItem(id);
         } else{
             cartItem.total=cartItem.count*cartItem.price;
-            cartItem.total= parseFloat(cartItem.total.toFixed(2));
+            // cartItem.total= parseFloat(cartItem.total.toFixed(2));
+            cartItem.total= parseFloat(cartItem.total);
 
 
             this.setState(()=>{
