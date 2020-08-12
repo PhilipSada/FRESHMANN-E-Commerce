@@ -429,12 +429,12 @@ class ProductProvider extends Component{
      
         // subTotal=parseFloat(subTotal).toFixed(2);
         // subTotal = subTotal.toFixed(2);
-        subTotal= parseFloat(subTotal);
+        // subTotal= parseFloat(subTotal);
        
         let tax= subTotal * 0.2;
         // tax=parseFloat(tax).toFixed(2);
         // tax=parseFloat(tax.toFixed(2));
-        tax=parseFloat(tax);
+        // tax=parseFloat(tax);
       
         
         //the plus sign infront of subTotal and Tax is to ensure the value passed is a number as this could be an issue when using parseFloat
@@ -442,7 +442,7 @@ class ProductProvider extends Component{
         let total = subTotal + tax;
         // total=parseFloat(total).toFixed(2);
         // total=parseFloat(total.toFixed(2));
-        total=parseFloat(total);
+        // total=parseFloat(total);
       
     
 
@@ -515,7 +515,7 @@ class ProductProvider extends Component{
             tempItem.total = tempItem.price * tempItem.count;
             // tempItem.total= parseFloat(tempItem.total).toFixed(2);
             // tempItem.total= parseFloat(tempItem.total.toFixed(2));
-            tempItem.total= parseFloat(tempItem.total);
+            // tempItem.total= parseFloat(tempItem.total);
         }
 
         this.setState(()=>{
@@ -563,7 +563,7 @@ class ProductProvider extends Component{
         
         cartItem.total=cartItem.count*cartItem.price;
         // cartItem.total= parseFloat(cartItem.total.toFixed(2));
-        cartItem.total= parseFloat(cartItem.total);
+        // cartItem.total= parseFloat(cartItem.total);
  
         this.setState(()=>{
             return (
@@ -587,7 +587,7 @@ class ProductProvider extends Component{
         } else{
             cartItem.total=cartItem.count*cartItem.price;
             // cartItem.total= parseFloat(cartItem.total.toFixed(2));
-            cartItem.total= parseFloat(cartItem.total);
+            // cartItem.total= parseFloat(cartItem.total);
 
 
             this.setState(()=>{
